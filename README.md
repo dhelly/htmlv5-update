@@ -47,6 +47,7 @@ Pontos importantes:
 
 ## Novas Semântica
 ![](https://miro.medium.com/max/562/0*yi18C1GKlWY4l6Ef.png)
+
 fonte: [HTML5: entendendo a estrutura e a semântica - Edu Agni](https://medium.com/@eduagni/html5-entendendo-a-estrutura-e-a-sem%C3%A2ntica-db5f17808c7)
 
 Principais dúvidas estão no uso do `section` do `article`. Quando podemos usar?
