@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>MusicDot | Sobre a empresa</title>
+    <!-- Inclusão do arquivo CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    <h1>H1 com imagem de fundo</h1>
+    <p>
+        Primeiro paragrafo
+    </p>
+    <p>
+        <strong>Paragrafo 2</strong> Lorem, ipsum.
+    </p>
+    <h2>H2 Do documento</h2>
+
+    <section>
+        <h2>Listas de Definição</h2>
+        <p>Utilizada para demarcar glossário</p>
+
+        <dl>
+            <dt>HTML</dt>
+            <dd>
+                HTML é a linguagem de marcação de textos utilizada para exibir textos como páginas na Internet.
+            </dd>
+            <dt>Navegador</dt>
+            <dd>
+                Navegador é o software que requisita um documento HTML através do protocolo HTTP e exibe seu conteúdo em uma janela.
+            </dd>
+        </dl>
+    </section>
+
+    <section>
+        <h2>Grau de especificidade de um seletor</h2>
+        <p>Existe uma coisa muito importante no CSS que precisamos tomar cuidado é o grau de especificidade de um seletor. Isto é, a prioridade de interpretação de um seletor pelo navegador. Para entender estas regras de especificidade de um selector, ao
+            criarmos um seletor de tag a sua pontuação se torna 1. Quando usamos um seletor de classe sua pontuação se torna 10. Quando usamos um seletor de id sua pontuação se torna 100. Ao fim, o navegador soma a pontuação dos seletores aplicados à
+            um elemento, e as propriedades com o seletor de maior pontuação são as que valem.</p>
+        <div class="box-code">
+
+            <body>
+                <p class="paragrafo" id="paragrafo-rosa">Texto</p>
+            </body>
+            p { /* Pontuação 1 */ color: blue; } .paragrafo { /* Pontuação 10 */ color: red; } #paragrafo-rosa { /* Pontuação 100 */ color: pink; }
+        </div>
+        <p>No exemplo acima o parágrafo vai ficar com a cor rosa porque o seletor que tem a cor rosa é o seletor de maior pontuação.</p>
+        <p>Quando elementos possuem a mesma pontuação quem prevalece é a propriedade do último seletor:</p>
+        <div class="box-code">
+            p { /* Pontuação 1 */ color: blue; } p { /* Pontuação 1 */ color: red; }
+        </div>
+
+        <p>No exemplo acima a cor do parágrafo será vermelha.</p>
+        <p>Podemos também somar os pontos para deixar nosso seletor mais forte:</p>
+        <div class="box-code">
+            body p { /* Seletor de tag + outro seletor de tag = 2 pontos */ color: brown; } p { /* Pontuação 1 */ color: blue; }
+        </div>
+        <p>No exemplo acima nós deixamos nosso seletor mais específico para os
+            <p> que estão dentro de uma tag `
+
+                <body>` , portanto a cor do parágrafo será marrom.</p>
+            <p>Em resumo:</p>
+            <p>Quanto mais específico é o nosso seletor, maior sua pontuação no nível de especificidade do CSS. Portanto devemos sempre trabalhar com uma baixa especificidade, para que não seja impossível sobrescrever valores quando necessário em uma situação
+                específica.
+            </p>
+
+    </section>
+    </body>
+
+    </html

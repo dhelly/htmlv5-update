@@ -1,0 +1,40 @@
+body {
+    border-color: red;
+    border-style: solid;
+    border-width: 1px;
+    /* border: 1px solid red; forma resumida */
+}
+
+h1 {
+    /* background-image: url(https://i.imgur.com/uAhjMNd.jpg); */
+    background-image: url('./assets/images/h1_background.jpg');
+    /* color: red; */
+}
+
+h2 {
+    /* color: yellow; */
+}
+
+p {
+    /* tamanho da altura de cada linha */
+    /* line-height: 3px; */
+    /* tamanho do espaço entre cada letra */
+    /* letter-spacing: 3px; */
+    /* tamanho do espaço entre cada palavra */
+    /* word-spacing: 5px; */
+    /* tamanho da margem da primeira linha do texto */
+    /* text-indent: 30px; */
+    background-color: green;
+    height: 300px;
+    width: 300px;
+}
+
+ul {
+    /* alterar para circulo antes de cada <li> da lista não-ordenada */
+    list-style-type: circle;
+}
+
+ol {
+    /* alterar para uma sequência alfabética antes de cada <li> da lista ordenada */
+    list-style-type: upper-alpha;
+}
